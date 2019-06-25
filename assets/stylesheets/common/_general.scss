@@ -5,3 +5,36 @@
   margin: 0 auto;
   padding: 0 30px;
 }
+
+#drop {
+	display: none;
+}
+
+.toggle {
+	color: $text-primary;
+	background: $black;
+	padding: 0.5rem 1.25rem;
+}
+
+.toggle {
+	display: inline-block;
+	position: relative;
+	z-index: 99;
+}
+
+.links {
+	display: none;
+}
+
+#drop:checked ~ .links {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+@media only screen and (min-width: 992px) {
+	.toggle, #drop {
+		display: none;
+	}
+}
