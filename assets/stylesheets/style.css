@@ -143,7 +143,7 @@ p {
 .btn {
   padding: 0.8rem 2rem;
   background: transparent;
-  border-radius: 0.5rem;
+  border-radius: 0.4rem;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1rem;
@@ -267,8 +267,58 @@ p {
 .banner-container {
   padding: 0;
   margin: 0;
-  height: 100vh;
-  background: url("../media/banner.jpg"); }
+  background: url("../media/banner.jpg") no-repeat;
+  background-size: cover; }
+
+.hero-container {
+  width: 80%;
+  padding: 5rem 0rem; }
+
+.hero-text h5 {
+  font-weight: 500;
+  color: #ef9632;
+  margin: 1rem 0rem; }
+
+.hero-text h2,
+.hero-text p {
+  color: #fff;
+  margin: 1rem 0rem; }
+
+.hero-text p {
+  font-size: 0.9rem; }
+
+.hero-text a {
+  color: #fff;
+  font-size: 0.8rem; }
+
+@media all and (max-width: 768px) {
+  .hero-text .grid-col-2 {
+    grid-template-columns: 1fr; } }
+
+.explore-section {
+  padding: 5rem 0rem; }
+
+.explore-section h2 {
+  padding: 2rem 0rem; }
+
+.explore-grid i {
+  font-size: 2.5rem;
+  color: #ef9632;
+  margin: 2rem 0rem; }
+
+.explore-grid h4 {
+  margin: 1rem 0rem; }
+
+.explore-grid p {
+  margin: 2rem 0rem; }
+
+@media all and (max-width: 768px) {
+  .explore-section {
+    padding: 0rem 1.6rem; }
+    .explore-section .grid-col-3 {
+      grid-template-columns: 1fr; }
+  .explore-grid {
+    padding: 0rem 2.5rem; } }
 
 .footer {
   background: #1e272e;

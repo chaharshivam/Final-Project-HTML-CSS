@@ -1,6 +1,84 @@
 .banner-container {
 	padding: 0;
 	margin: 0;
-	height: 100vh;
-	background: url('../media/banner.jpg');
+	// height: 100vh;
+	background: url('../media/banner.jpg') no-repeat;
+	background-size: cover;
+}
+
+// HERO 
+
+.hero-container {
+	width: 80%;
+	// margin: 0 auto;
+	padding: 5rem 0rem;
+}
+
+.hero-text {
+	h5 {
+		font-weight: 500;
+		color: $golden;
+		margin: 1rem 0rem;
+	}
+	h2,
+	p {
+		color: $text-primary;
+		margin: 1rem 0rem;
+	}
+	p {
+		font-size: 0.9rem;
+	}
+	a {
+		color: $text-primary;
+		font-size: 0.8rem;
+	}
+
+}
+
+// HERO RESPONSIVE 
+
+@media all and (max-width: 768px) {
+	.hero-text{
+		.grid-col-2{
+			grid-template-columns: 1fr;
+		}	
+	}
+}
+
+
+// EXPLORE/ABOUT Section
+
+.explore-section {
+	padding: 5rem 0rem;
+}
+.explore-section h2 {
+	padding: 2rem 0rem;
+}
+.explore-grid {
+	i {
+		font-size: 2.5rem;
+		color: $golden;
+		margin: 2rem 0rem;
+	}
+	h4 {
+		margin: 1rem 0rem;
+	}
+	p {
+		margin: 2rem 0rem;
+	}
+	
+}
+
+// EXPLORE RESPONSIVE 
+
+@media all and (max-width: 768px) {
+    .explore-section {
+        .grid-col-3 {
+            grid-template-columns: 1fr;
+		}
+		padding: 0rem 1.6rem;
+	}
+	.explore-grid {
+		padding: 0rem 2.5rem;
+	}
 }
