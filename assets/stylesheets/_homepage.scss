@@ -4,3 +4,81 @@
 	height: 100vh;
 	background: url('../media/banner.jpg');
 }
+
+// Team section
+.team {
+	text-align: center;
+	.wrapper {
+		padding: 2.5rem 1rem;
+	}
+
+	.grid-col-3 {
+		grid-template-columns: 1fr;
+	}
+}
+
+.team-title {
+	margin: 1rem 0;
+	font-size: 1.375rem;
+}
+
+.team-col {
+	padding: 1rem 1rem;
+}
+
+.team-img {
+	box-shadow: 0 20px 40px -10px rgba(0, 0, 0, .3);
+}
+
+.team-info {
+	color: rgba($text-secondary, 0.8);
+	p {
+		font-size: 0.8rem;
+	}
+}
+
+.team-name {
+	line-height: 1;
+	margin: 1rem 0;
+	font-size: 1.2rem;
+	color: $black;
+	span {
+		color: $golden;
+		font-weight: 700;
+		font-size: 0.8rem;
+	}
+}
+
+.team-social {
+	margin: 1rem 0;
+	li {
+		margin: 0 1rem;
+	}
+
+	a {
+		i {
+			font-size: 0.8rem;
+		}
+	}
+}
+
+@media all and (min-width: 992px) {
+	.team {
+		.wrapper {
+			padding: 3rem 6rem;
+		}
+
+		.grid-col-3 {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+
+	.team-title {
+		margin: 3rem 0;
+		font-size: 2.5rem;
+	}
+
+	.team-col {
+		padding: 2rem 1rem;
+	}
+}
