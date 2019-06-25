@@ -5,3 +5,33 @@
   margin: 0 auto;
   padding: 0 30px;
 }
+
+/* Buttons */
+ 
+.btn {
+  padding: 0.8rem 2rem;
+  background: transparent;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-top: 1rem;
+  letter-spacing: 0.05rem;
+  color: $text-primary;
+  cursor: pointer;
+}
+.btn-primary {
+  background: $golden;
+  border: none;
+  color: #fff;
+}
+.btn-primary:hover {
+  background: $red;
+}
+.btn-secondary {
+  background: $black;
+}
+.btn-secondary:hover {
+  background: $red;
+  color: #fff;
+}
