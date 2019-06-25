@@ -6,6 +6,7 @@
   padding: 0 30px;
 }
 
+// Dropdown menu
 #drop {
 	display: none;
 }
@@ -33,7 +34,26 @@
 	justify-content: center;
 }
 
+
+// social icons
+.fa-twitter {
+	color: $twitter;
+}
+
+.fa-facebook-f {
+	color: $fb;
+}
+
+.fa-google-plus-g {
+	color: $gplus;
+}
+
+.fa-dribbble {
+	color: $dribble;
+}
+
 @media only screen and (min-width: 992px) {
+	// dropdown
 	.toggle, #drop {
 		display: none;
 	}
