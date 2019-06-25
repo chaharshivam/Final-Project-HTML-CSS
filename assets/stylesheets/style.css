@@ -174,12 +174,6 @@ p {
 .grid-col-1 {
   grid-template-columns: repeat(1, 1fr); }
 
-.banner-container {
-  padding: 0;
-  margin: 0;
-  height: 100vh;
-  background: url("../media/banner.jpg"); }
-
 .header {
   padding: 1rem 1rem;
   box-shadow: 0 0.15rem 0.1rem 0 rgba(0, 0, 0, 0.05); }
@@ -223,3 +217,9 @@ p {
     padding: 1rem; }
     .nav-item:first-child a {
       color: #ef9632; } }
+
+.banner-container {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  background: url("../media/banner.jpg"); }

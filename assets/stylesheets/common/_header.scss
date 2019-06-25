@@ -1,0 +1,74 @@
+// Mobile first approach
+
+.header {
+	padding: 1rem 1rem;
+	box-shadow: 0 0.15rem 0.1rem 0 rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+	font-size: 2rem;
+	font-weight: 300;
+		
+	a {
+		color: #fff;
+	}	
+}
+
+.nav {
+	flex-wrap:wrap;
+}
+
+.links {
+	width: 100%;
+	margin-top: 1rem;
+	background: rgba(0,0,0, 0.7);
+}
+
+.nav-item {
+	padding: 1rem;
+	a {
+		color: #fff;
+	}
+
+	&:first-child {
+		a {
+			color: $golden;
+		}
+	}
+}
+/* Tablet Styles */
+@media only screen and (min-width: 641px) and (max-width: 991px) {
+ 
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 992px) {
+	.header {
+		padding: 0 4rem;		
+	}
+
+	.nav {
+		padding: 1rem 0;
+		flex-wrap: wrap;
+	}
+
+	.logo {
+		font-size: 2.05rem;
+	}
+
+	.links {
+		background: none;
+		display: flex;
+		width: fit-content;
+	}
+
+	.nav-item {
+		padding: 1rem;
+
+		&:first-child {
+			a {
+				color: $golden;
+			}
+		}
+	}
+}
