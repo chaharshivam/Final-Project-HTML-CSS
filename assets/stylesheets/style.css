@@ -56,6 +56,13 @@ img {
   font-size: 0;
   vertical-align: top; }
 
+button,
+input,
+textarea {
+  box-shadow: none;
+  outline: 0;
+  border: 0; }
+
 /*contains colors and font family etc.*/
 /*contains the font sizes etc.*/
 /*Base styles*/
@@ -131,6 +138,34 @@ p {
   width: 100%;
   margin: 0 auto;
   padding: 0 30px; }
+
+/* Buttons */
+.btn {
+  padding: 0.8rem 2rem;
+  background: transparent;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-top: 1rem;
+  letter-spacing: 0.05rem;
+  color: #fff;
+  cursor: pointer; }
+
+.btn-primary {
+  background: #ef9632;
+  border: none;
+  color: #fff; }
+
+.btn-primary:hover {
+  background: #ff3838; }
+
+.btn-secondary {
+  background: #181a1d; }
+
+.btn-secondary:hover {
+  background: #ff3838;
+  color: #fff; }
 
 #drop {
   display: none; }
@@ -309,3 +344,48 @@ p {
     flex-wrap: no-wrap;
     justify-content: space-between;
     padding: 0 4rem; } }
+
+.contact-container {
+  max-width: 90%;
+  margin: 0 auto; }
+
+.contact-inner-container {
+  max-width: 70%;
+  margin: 0 auto; }
+  .contact-inner-container iframe {
+    padding: 4rem 0rem; }
+
+.contact-text h3 {
+  padding: 3rem 0rem 1rem 0rem; }
+
+.contact-text p {
+  padding: 2rem 0rem 3rem 0rem; }
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.4rem; }
+
+.form-control::placeholder {
+  color: #c3c3c3;
+  font-size: 1rem; }
+
+.input-field {
+  width: 100%; }
+
+.contact-form label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-weight: 500; }
+
+@media all and (max-width: 768px) {
+  .contact-form .grid-col-2 {
+    grid-template-columns: 1fr; }
+  .contact-inner-container {
+    max-width: 100%; }
+  .contact-container {
+    max-width: 100%; } }
