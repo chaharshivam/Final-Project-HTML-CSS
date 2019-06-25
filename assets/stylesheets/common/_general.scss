@@ -35,3 +35,56 @@
   background: $red;
   color: #fff;
 }
+
+// Dropdown menu
+#drop {
+	display: none;
+}
+
+.toggle {
+	color: $text-primary;
+	background: $black;
+	padding: 0.5rem 1.25rem;
+}
+
+.toggle {
+	display: inline-block;
+	position: relative;
+	z-index: 99;
+}
+
+.links {
+	display: none;
+}
+
+#drop:checked ~ .links {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+// social icons
+.fa-twitter {
+	color: $twitter;
+}
+
+.fa-facebook-f {
+	color: $fb;
+}
+
+.fa-google-plus-g {
+	color: $gplus;
+}
+
+.fa-dribbble {
+	color: $dribble;
+}
+
+@media only screen and (min-width: 992px) {
+	// dropdown
+	.toggle, #drop {
+		display: none;
+	}
+}
