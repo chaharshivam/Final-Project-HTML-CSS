@@ -319,11 +319,14 @@ p {
 
 .explore-grid p {
   font-weight: 300;
-  color: #73828e; }
+  color: #73828e;
+  padding: 0 3rem; }
 
 .explore-grid-part2-c {
   padding: 7rem;
   grid-gap: 0; }
+  .explore-grid-part2-c p {
+    padding: 0; }
 
 .fa-plane {
   transform: rotate(-45deg); }

@@ -67,6 +67,7 @@
 	p {
 		font-weight: 300;
 		color: $text-secondary;
+		padding: 0 3rem;
 	}	
 }
 
@@ -75,6 +76,9 @@
 	.explore-grid-part2-c {
 		padding: 7rem;
 		grid-gap: 0;
+		p {
+			padding: 0;
+		}
 	}
 	
 	.fa-plane {
