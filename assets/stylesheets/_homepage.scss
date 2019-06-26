@@ -57,12 +57,16 @@
 }
 .explore-grid {
 	i {
-		font-size: 2.5rem;
+		font-size: 2rem;
 		color: $golden;
-		margin: 2rem 0rem;
+		margin: 1.5rem 0rem;
 	}
 	h4 {
 		margin: 1rem 0rem;
+	}
+	p {
+		font-weight: 300;
+		color: $text-secondary;
 	}	
 }
 

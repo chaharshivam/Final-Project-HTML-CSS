@@ -310,12 +310,16 @@ p {
   padding: 2rem 0rem; }
 
 .explore-grid i {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #ef9632;
-  margin: 2rem 0rem; }
+  margin: 1.5rem 0rem; }
 
 .explore-grid h4 {
   margin: 1rem 0rem; }
+
+.explore-grid p {
+  font-weight: 300;
+  color: #73828e; }
 
 .explore-grid-part2-c {
   padding: 7rem;
