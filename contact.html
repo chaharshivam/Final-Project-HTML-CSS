@@ -14,7 +14,26 @@
 </head>
 
 <body>
-    <!-- Header -->
+
+    <div class="banner-container">
+        <!-- Header -->
+        <header class="header">
+            <nav class="nav flex-between">
+                <h1 class="logo">
+                    <a href="index.html">Camping</a>
+                </h1>
+                <label for="drop" class="toggle">Menu</label>
+                <input type="checkbox" id="drop">
+                <ul class="links flex-between">
+                    <li class="nav-item"><a href="#">Home</a></li>
+                    <li class="nav-item"><a href="#">About</a></li>
+                    <li class="nav-item"><a href="#">More Info <i class="fa fa-angle-down"></i></a></li>
+                    <li class="nav-item"><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
     <header></header>
     <!-- Main- Form -->
     <main>
@@ -66,7 +85,55 @@
         </section>
     </main>
     <!-- Footer -->
-    <footer></footer>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="grid-col-3">
+                <div class="footer-item">
+                    <h3 class="footer-heading">Address</h3>
+                    <ul class="footer-list footer-address">
+                        <li>Address : 1234 lock, Charlotte, North<br>Carolina, United States</li>
+                        <li>Phone : +12 534894364</li>
+                        <li><a href="mailto:info@example.com">Email : info@example.com</a></li>
+                        <li>Fax : +12 534894364</li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-list footer-links">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Gallery</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h3 class="footer-heading">Newsletter</h3>
+                    <p class="footer-newsletter">
+                        By subscribing to our mailing list you will always get latest news and updates from us.
+                    </p>
+                    <div class="flex-center footer-input">
+                        <input type="email" placeholder="Enter your email..">
+                        <!-- 
+               --><button><i class="far fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section class="footer-bottom">
+        <div class="wrapper flex-between">
+            <p>© 2018 Camping. All rights reserved | Design by W3layouts.</p>
+            <nav class="footer-nav">
+                <ul class="footer-links flex-between">
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-google-plus-g"></i></li>
+                    <li><i class="fab fa-dribbble"></i></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
 </body>
 
 </html>
