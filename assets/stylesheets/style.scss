@@ -1,0 +1,18 @@
+/*contains reset*/
+@import "./common/reset";
+/*contains colors and font family etc.*/
+@import "./common/vars";
+/*contains the font sizes etc.*/
+@import "./common/base";
+@import "./common/general";
+@import "./common/grid";
+// for header
+@import "./common/header";
+// homepage
+@import "homepage";
+// footer
+@import "./common/footer";
+// contact
+@import "contact";
+// Gallery
+@import "gallery";
