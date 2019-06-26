@@ -1,8 +1,9 @@
 .banner-container {
 	padding: 0;
 	margin: 0;
-	height: 100vh;
+	min-height: 38vh;
 	background: url('../media/banner.jpg');
+	background-size: cover;
 }
 
 // Team section
@@ -108,7 +109,7 @@
 .tour-footer {
 	margin-top: 1rem;
 	padding-top: 1rem;
-	border-top: 0.5px solid $text-secondary;
+    border-top: 1px solid #3d558e;
 	color: $text-secondary;
 	font-size: 0.8rem;
 
@@ -117,6 +118,51 @@
 		margin-right: 0.25rem;
 	}
 }
+
+// Testimonial
+.quote {
+	margin-bottom: 4rem;
+	i {
+		color: $golden;
+		font-size: 2.5rem;
+		margin-right: 1rem;
+	}
+
+	p {
+		line-height: 2;
+		font-weight: 300;
+		color: #262621;
+		font-size: 0.98rem;
+		padding: 1.5rem;
+		text-align: justify;
+	}
+}
+
+.client-img {
+	padding: 0 2rem;
+
+	img {
+		width: 2.5rem;
+		height: auto;
+		border-radius: 50%;
+	}
+}
+
+.client-info {
+	flex-direction: column;
+
+	h5 {
+		color: $red;
+		font-size: 0.9rem;
+	}
+
+	p {
+		padding: 0;
+		font-size: 0.8rem;
+		color: $text-secondary;
+	}
+}
+
 
 @media all and (min-width: 992px) {
 	.team {
@@ -148,6 +194,24 @@
 			grid-template-columns: repeat(3, 1fr);
 			column-gap: 0;
 			row-gap: 0;
+		}
+	}
+
+	.quote {
+		margin-bottom: 8rem;
+		.wrapper {
+			padding: 0 8.5rem;
+		}
+	}
+
+	.quote-box {
+		padding: 0 12rem;
+	}
+
+	.client-img {
+		margin-right: 2rem;
+		img {
+			width: 100%;
 		}
 	}
 }
