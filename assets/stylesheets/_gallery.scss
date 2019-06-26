@@ -1,0 +1,22 @@
+.gallery {
+	margin-bottom: 4rem;
+	.grid-col-3 {
+		grid-template-columns: 1fr;
+	}
+}
+
+.gallery-img:hover {
+	box-shadow: 0 20px 40px -10px rgba(0, 0, 0, .3);
+}
+
+@media all and (min-width: 992px) {
+	.gallery {
+		.grid-col-3 {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		.wrapper {
+			padding: 4rem 6rem;
+		}
+	}
+}

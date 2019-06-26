@@ -1,0 +1,102 @@
+// Mobile first approach
+
+.header {
+	padding: 1rem 1rem;
+	box-shadow: 0 0.15rem 0.1rem 0 rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+	font-size: 2rem;
+	font-weight: 300;
+		
+	a {
+		color: #fff;
+	}	
+}
+
+.nav {
+	flex-wrap:wrap;
+}
+
+.links {
+	width: 100%;
+	margin-top: 1rem;
+	background: rgba(0,0,0, 0.7);
+}
+
+.sub-links, #drop2 {
+	display: none;
+}	
+
+#drop2:checked ~ .sub-links {
+	display: flex;
+	background: transparent !important;
+	// width: 15%;
+	margin-top: 0.5rem; 
+	// position: absolute;
+	background: #fff;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+
+	a {
+		color: #fff;
+	}
+	li {
+		padding: 0.5rem;
+	}
+	a:hover {
+		color: $golden;
+	}
+}
+
+.nav-item {
+	padding: 1rem;
+	a {
+		color: #fff;
+	}
+
+	label {
+		color: #fff;
+	}
+}
+/* Tablet Styles */
+@media only screen and (min-width: 641px) and (max-width: 991px) {
+ 
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 992px) {
+	.header {
+		padding: 0.4rem 8rem;		
+	}
+
+	.nav {
+		flex-wrap: wrap;
+	}
+
+	.logo {
+		font-size: 2.05rem;
+	}
+
+	.links {
+		background: none;
+		display: flex;
+		width: fit-content;
+	}
+
+	#drop2:checked ~ .sub-links {
+		background: #fff !important;
+		width: 15%;
+		margin-top: 0; 
+		position: absolute;
+
+		a {
+			color: $black;
+		}
+	}
+
+	.nav-item {
+		padding: 1rem;
+	}
+}
