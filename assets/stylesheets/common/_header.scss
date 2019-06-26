@@ -24,16 +24,40 @@
 	background: rgba(0,0,0, 0.7);
 }
 
+.sub-links, #drop2 {
+	display: none;
+}	
+
+#drop2:checked ~ .sub-links {
+	display: flex;
+	background: transparent !important;
+	// width: 15%;
+	margin-top: 0.5rem; 
+	// position: absolute;
+	background: #fff;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+
+	a {
+		color: #fff;
+	}
+	li {
+		padding: 0.5rem;
+	}
+	a:hover {
+		color: $golden;
+	}
+}
+
 .nav-item {
 	padding: 1rem;
 	a {
 		color: #fff;
 	}
 
-	&:first-child {
-		a {
-			color: $golden;
-		}
+	label {
+		color: #fff;
 	}
 }
 /* Tablet Styles */
@@ -61,13 +85,18 @@
 		width: fit-content;
 	}
 
+	#drop2:checked ~ .sub-links {
+		background: #fff !important;
+		width: 15%;
+		margin-top: 0; 
+		position: absolute;
+
+		a {
+			color: $black;
+		}
+	}
+
 	.nav-item {
 		padding: 1rem;
-
-		&:first-child {
-			a {
-				color: $golden;
-			}
-		}
 	}
 }

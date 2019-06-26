@@ -71,7 +71,6 @@
 	justify-content: center;
 }
 
-
 // social icons
 .fa-twitter {
 	color: $twitter;
@@ -94,4 +93,8 @@
 	.toggle, #drop {
 		display: none;
 	}
+}
+
+.active {
+	color: $golden !important;
 }
